@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/profile.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg mainNavbar">
+        <a class="navbar-brand" href="index.html">ارسي </a> <span class="englishLogo">Erssa</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-sliders-h"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">الصفحة الرئيسية<i class="fas fa-home"></i> <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">الصفحة الشخصية<i class="far fa-user"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html"> تسجيل الدخول<i class="fas fa-sign-in-alt"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rigstration.html">إنشاء حساب <i class="fas fa-user-plus"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutUs.html">عن الموقع <i class="fas fa-lightbulb"></i></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container mainSection" id="mainSectionDiv">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile-img">
+                    <label for="fileField"><i class="fas fa-user usr-img-icon"></i></label>
+                    <button class="btn btn-dark  btnEditImg">تعديل الصورة الشخصية</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="userInfo" id="userInfoDiv">
+
+                    <span id="nameSpan">AboBakr Ali</span>
+                    <br>
+                    <span id="typeSpan">مستخدم</span>
+                    <br>
+                    <span id="mailSpan">abobakr.elhadary73@yahoo.com</span>
+                    <br>
+                    <span id="jobSpan">مطور مواقع الكترونية</span>
+                    <br>
+                    <span id="addressSpan">41 شارع الحسينية الجمالية القاهرة</span>
+                    <br>
+                    <span id="studySpan">حاسبات ومعلومات جامعة عين شمس</span>
+                    <br>
+                    <span id="dateOfBirthSpan">23/7/1998</span>
+                </div>
+            </div>
+            <div class="col-md-2 divProfileEditBtn">
+                <input id="pEditBtn" type="submit" class="profile-edit-btn" name="btnAddMore" value="تعديل بياناتي" />
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container editProfileInfo" id="editProfileInfoDiv">
+        <input class="form-control" id="nameInput">
+        <input class="form-control" id="mailInput">
+        <input class="form-control" id="jobInput">
+        <input class="form-control" id="addressInput">
+        <input class="form-control" id="studyInput">
+        <input class="form-control " id="dateOfBirthInput">
+        <button class="btn btn-light" id="saveBtn">حفظ</button>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+
+</html>

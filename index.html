@@ -1,0 +1,157 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/index_style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Harmattan&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top mainNavbar">
+
+    <a class="navbar-brand" href="index.html">ارسي </a> <span class="englishLogo">Erssa</span>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-sliders-h"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">الصفحة الرئيسية<i class="fas fa-home"></i> <span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">الصفحة الشخصية<i class="far fa-user"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html"> تسجيل الدخول<i class="fas fa-sign-in-alt"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rigstration.html">إنشاء حساب <i class="fas fa-user-plus"></i></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="aboutUs.html">عن الموقع <i class="fas fa-lightbulb"></i></a>
+        </li>
+
+
+
+      </ul>
+      <form class="notiList">
+        <a id="notificationsIcon" href="#"><i class="fas fa-flag"></i></a>
+        <a id="messageIcon" href="#"><i class="fas fa-comments"></i></a>
+
+      </form>
+    </div>
+  </nav>
+  <div class="dropDownList" id="DDL">
+    <h6 class="notiH6" id="notiTitle">الإشعارات</h6>
+    <table class="table">
+
+      <tbody>
+        <tr>
+          <td class="waitingMessage">أحمد جمال</td>
+
+        </tr>
+        <tr>
+          <td class="waitingMessage">أحمد جمال</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="homePage">
+
+    <div class="tabContainer w-100">
+      <div class="buttonContainer" style="direction: rtl;">
+
+        <button onclick="showPanel(3)">تعرف أكثر</button>
+        <button onclick="showPanel(2)">مناقصاتي</button>
+        <button onclick="showPanel(1)">مناقصات جارية</button>
+        <button onclick="showPanel(0)">إضافة مناقصة</button>
+
+
+      </div>
+      <div class="tabPanel">
+        <div class="CreatePost">
+          <h3>إنشاء مناقصة</h3>
+          <input class="form-control" placeholder="عنوان الصفقة">
+          <textarea class="form-control" placeholder="تفاصيل الصفقة"></textarea>
+          <input class="form-control" placeholder="مدة المناقصة باليوم" type="number">
+          <span class="addImageText">إضافة صور للصفقة</span>
+          <i class="fas fa-image"></i>
+
+          <button class="btn btn-warning createButton">إنشاء</button>
+        </div>
+      </div>
+      <div class="tabPanel">
+        <div class="timeLine">
+
+
+
+
+
+          
+
+          <div class="container JoinTo">
+            <div class="row">
+              <div class="col-12">
+                <input class="form-control w-50" placeholder="حدد قيمة العطاء بالجنية المصري" type="number">
+                <textarea class="form-control w-50" placeholder="حدد ميزات أخري أو أي ملاحظات"></textarea>
+                <button class="btn btn-warning w-50 finish">إتمام العطاء</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabPanel">Tab 3:Content</div>
+        <div class="tabPanel">Tab 4:Content</div>
+
+      </div>
+
+
+
+
+      <div id="messageField">
+        <div id="messageFieldPerson">
+          <h6 id="personName">اسم الشخص </h6>
+          <div id="closeBtn">
+            <h6>X</h6>
+          </div>
+        </div>
+        <div class="currentMessage">السلام عليكم</div>
+        <input class="form-control w-100" id="textField">
+        <i class="fas fa-arrow-circle-left sendMessageBtn"></i>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="js/jquery-3.5.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
